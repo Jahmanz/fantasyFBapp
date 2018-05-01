@@ -1,0 +1,31 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" routerLink="">Jah's Players to Watch</a>
+    </div>
+    <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <a class="nav-link active" a routerLink="playerlist">Watched Players</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" routerLink="playerstowatch">Players to Watch</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" routerLink="admin">Admin</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" routerLink="admin2">S2W Admin</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div class="container">
+  <h1>{{name}}</h1>
+  <router-outlet></router-outlet>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <a class="text-muted" routerLink="admin" class ="btn btn-danger">Admin</a>
+  </div>
+</footer>

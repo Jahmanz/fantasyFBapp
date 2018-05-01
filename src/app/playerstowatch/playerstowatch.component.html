@@ -1,0 +1,22 @@
+
+<!doctype html>
+<html ng-app>
+<body>
+  <head>
+    <script src="http://code.angularjs.org/1.2.6/angular.min.js"></script>
+ </head>
+
+
+
+<h2>Players I need to watch</h2>
+
+<div *ngFor="let players of playerstowatch | async"  class="panel panel-default" [ngStyle]="myStyle">
+  <div class="panel-body">
+    <h3 (click)="goToDetailPage(players)"><em>{{players.name}}</em> on {{players.team}}</h3>
+    <div *ngIf="currentRoute === '/admin2'">
+      {{players.notes}}
+      <hr>
+      <app-edit2-player [selectedPlayer]="players"></app-edit2-player>
+    </div>
+  </div>
+</div>

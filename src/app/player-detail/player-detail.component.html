@@ -1,0 +1,15 @@
+
+<!doctype html>
+<html ng-app>
+  <head>
+    <script src="http://code.angularjs.org/1.2.6/angular.min.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+ </head>
+ <div class="panel panel-default">
+   <div class="panel-heading">
+   <h3 class="panel-name">{{(playerToDisplay | async)?.name}}</h3>
+   <h4>On {{(playerToDisplay | async)?.team}}</h4>
+   <h5>{{(playerToDisplay | async)?.notes}}</h5>
+<a class="btn btn-primary btn-lg" href="{{(playerToDisplay | async)?.stats}}" role="button">Watch Stats</a>
+ </div>
+ <div class="panel-body">

@@ -1,0 +1,24 @@
+.jumbotron {
+background-image: url("https://media.giphy.com/media/l2JJJHq5q8ZUA7GW4/giphy.gif");
+background-repeat: no-repeat;
+background-size: cover;
+background-color: #65889b;
+min-height: 500px;
+background-position: left;
+}
+
+h1 {
+  text-shadow: 1px 1px 2px black, 0 0 1em #72caf9, 0 0 0.2em #72caf9;
+  color: white;
+  font: 1.5em Georgia, serif;
+}
+
+h2 {
+  text-shadow: 1px 1px 2px black, 0 0 1em #72caf9, 0 0 0.2em #72caf9;
+  color: white;
+  font-weight: bold;
+}
+
+html {
+  background-color: #65889b;
+}
